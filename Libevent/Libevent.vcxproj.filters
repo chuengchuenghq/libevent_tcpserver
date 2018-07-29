@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\impl">
+      <UniqueIdentifier>{ff043e7d-fbb0-4910-b441-922593c8caa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\thread">
+      <UniqueIdentifier>{05bf79e5-64af-421f-907e-85145d67625f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\test">
+      <UniqueIdentifier>{f008c581-dd3b-4798-9b0b-1bac0afddfa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ringbuffer">
+      <UniqueIdentifier>{04c3df29-4c24-4ac5-9b71-c5b40fe812b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\bloking_queue.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\condition.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\handler_bounded_buffer.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\mutex.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\semaphore.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\Thread.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\timer.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\include.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\print_statement.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\auto_link_event_lib.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\event_base_pool.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\tcp_client.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\tcp_server.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\tcp_server_impl.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\libev_tcp_session.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="ringbuffer\Types.h">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ringbuffer\Pack.h">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\libev_tcp_client_session.h">
+      <Filter>源文件\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\log.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ringbuffer\tcp_packet.h">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ringbuffer\circular_buffer.h">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ringbuffer\byte_buffer.h">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\query_timer.h">
+      <Filter>源文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\base_library_header.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\init_task.h">
+      <Filter>源文件\test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Libevent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\condition.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\mutex.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\semaphore.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\Thread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\timer.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\libevent2_echo_client.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\libevent2_echo_server.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\auto_link_event_lib.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\event_base_pool.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\tcp_client.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\libevent2_connect_test_client.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\libevent2_file_replay_server.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\libevent2_save_file_client.cpp">
+      <Filter>源文件\test</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\tcp_session_impl.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\libev_tcp_session.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="ringbuffer\Pack.cpp">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\libev_tcp_client_session.cpp">
+      <Filter>源文件\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\log.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ringbuffer\circular_buffer.cpp">
+      <Filter>源文件\ringbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\query_timer.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
