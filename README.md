@@ -5,6 +5,19 @@ if you want to build this project successfully , you have to install&build those
 测试代码在目录：./Libevent\tests
 
 简单的服务器示例代码：
+ using libevent2::tcp_server;
+using libevent2::event_base_pool;
+using libevent2::tcp_session;
+
+static int get_id()
+{
+	return base::ThisThread::current_thread_id();
+}
+
+static	unsigned short g_port = 12345;
+static  int g_heartbeart = 0;
+
+
 struct EchoSession: public tcp_session
 {
  
@@ -55,6 +68,10 @@ void print_session_info(EchoSession* pSession)
 
 int main()
 {
+
+	OUTPUT( g_port);
+	OUTPUT( g_heartbeart);
+
 	tcp_server<EchoSession> server;
 	server.set_callback_new_connection(new_connection_callback);
 	bool ret = server.listening(g_port);
@@ -75,6 +92,8 @@ int main()
 			printf("client count=[%d]\n"  , server.session_count() );
 		}
 	}
+
+
 }
 
 客户端示例代码：
