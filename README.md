@@ -5,7 +5,16 @@ if you want to build this project successfully , you have to install&build those
 测试代码在目录：./Libevent\tests
 
 简单的服务器示例代码：
- using libevent2::tcp_server;
+
+ ```
+ #include "include.h"
+#include "tcp_server.h"
+ 
+#include <vector>
+using namespace std;
+ 
+
+using libevent2::tcp_server;
 using libevent2::event_base_pool;
 using libevent2::tcp_session;
 
@@ -68,10 +77,6 @@ void print_session_info(EchoSession* pSession)
 
 int main()
 {
-
-	OUTPUT( g_port);
-	OUTPUT( g_heartbeart);
-
 	tcp_server<EchoSession> server;
 	server.set_callback_new_connection(new_connection_callback);
 	bool ret = server.listening(g_port);
@@ -96,16 +101,9 @@ int main()
 
 }
 
+```
 客户端示例代码：
- std::vector<tcp_client*> g_clientlist; 
- int g_dispatcher_count = 1;
- int g_num = 1;
- string g_ip = "127.0.0.1";
- unsigned short g_port = 12345;
- double g_reconnect = 1.0;
- bool g_auto_reconnect = true;
- int g_bytes = 1024*4;
-
+```
 struct client_echo : tcp_client
 {
 	virtual void callback_err(const std::string& msg)
@@ -212,5 +210,5 @@ int main()
     
     return 0;
 }
-
+```
 
