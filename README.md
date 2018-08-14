@@ -2,9 +2,8 @@
 dependency :  libevent , boost
 if you want to build this project successfully , you have to install&build those two projects at first.
 
-测试代码在目录：./Libevent\tests
-
-简单的服务器示例代码：
+test case directory：./Libevent\tests
+server simple code：
 
  ```
  #include "include.h"
@@ -102,7 +101,7 @@ int main()
 }
 
 ```
-客户端示例代码：
+client simple code：
 ```
 struct client_echo : tcp_client
 {
